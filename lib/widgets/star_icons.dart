@@ -11,9 +11,9 @@ class StarIcons extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (stars == 1) {
-      return Wrap(
+      return const Wrap(
         spacing: 5,
-        children: const [
+        children: [
           Icon(
             Icons.star,
             color: Colors.amber,
@@ -29,9 +29,9 @@ class StarIcons extends StatelessWidget {
         ],
       );
     } else if (stars == 2) {
-      return Wrap(
+      return const Wrap(
         spacing: 5,
-        children: const [
+        children: [
           Icon(
             Icons.star,
             color: Colors.amber,
@@ -47,9 +47,9 @@ class StarIcons extends StatelessWidget {
         ],
       );
     } else if (stars == 3) {
-      return Wrap(
+      return const Wrap(
         spacing: 5,
-        children: const [
+        children: [
           Icon(
             Icons.star,
             color: Colors.amber,
@@ -65,9 +65,9 @@ class StarIcons extends StatelessWidget {
         ],
       );
     } else {
-      return Wrap(
+      return const Wrap(
         spacing: 5,
-        children: const [
+        children: [
           Icon(
             Icons.star_border_outlined,
             color: Colors.grey,

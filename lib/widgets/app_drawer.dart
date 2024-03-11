@@ -112,8 +112,8 @@ class AppDrawer extends StatelessWidget {
       required userImage,
       required userName,
       required userEmail}) {
-    const String defaultName = '';
-    const String defaultEmail = '';
+      const String defaultName = '';
+      const String defaultEmail = '';
 
     return Material(
       color: Colors.blue,
@@ -222,7 +222,24 @@ class AppDrawer extends StatelessWidget {
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
-          
+          const SizedBox(
+            height: 36,
+          ),
+          const Center(
+            child: Text(
+              "Training Log",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold
+              ),
+            ),
+          ),
+          const Divider(
+            height: 25,
+            thickness: 5,
+          ),
+
           buildMenuItem(context,
               item: NavigationItem.workout,
               text: 'Workout',
