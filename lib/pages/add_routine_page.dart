@@ -111,6 +111,7 @@ class _AddRoutinePage extends State<AddRoutinePage> {
         child: Card(
           child: ExpansionTile(
             leading: badges.Badge(
+              badgeAnimation: const badges.BadgeAnimation.scale(),
               badgeContent: Text(routineExercises[exercise].toString()),
               child: nameFavoriteMap[exercise] == 1
                   ? const Icon(

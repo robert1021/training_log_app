@@ -130,6 +130,7 @@ class _EditRoutinePage extends State<EditRoutinePage> {
         child: Card(
           child: ExpansionTile(
             leading: badges.Badge(
+              badgeAnimation: const badges.BadgeAnimation.scale(),
               badgeContent: Text(chosenExercises[exercise].toString()),
               child: nameFavoriteMap[exercise] == 1
                   ? const Icon(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_vibrate/flutter_vibrate.dart';
 import 'package:focused_menu/focused_menu.dart';
 import 'package:focused_menu/modals.dart';
@@ -192,11 +193,25 @@ class _CalendarPage extends State<CalendarPage> {
                               Radius.circular(8.0),
                             ),
                           ),
-                          child: Center(
-                            child: Text(
-                              date.day.toString(),
-                              style: const TextStyle(color: Colors.white),
-                            ),
+                          child: Stack(
+                            children: [
+                              Center(
+                                child: Text(
+                                  date.day.toString(),
+                                  style: const TextStyle(color: Colors.white),
+                                ),
+                              ),
+                              const Positioned(
+                                bottom: 2,
+                                left: 2,
+                                child: Center(
+                                  child: Icon(
+                                    Icons.fitness_center,
+                                    size: 20,
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                         );
                       }

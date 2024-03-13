@@ -1195,6 +1195,7 @@ class _WorkoutPage extends State<WorkoutPage> {
                             child: ExpansionTile(
                               // leading: const Icon(Icons.fitness_center),
                               leading: badges.Badge(
+                                badgeAnimation: const badges.BadgeAnimation.scale(),
                                 badgeContent:
                                     Text(chosenExercisesSets[item].toString()),
                                 child: nameFavoriteMap[item] == 1
